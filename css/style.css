@@ -1,0 +1,96 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #1f1f25;
+    color: #fff;
+}
+
+/*start nav-left*/
+.nav-left{
+    padding: 15px;
+}
+.nav-left .brand{
+    position: relative;
+}
+
+.nav-left .logo img{
+    width: 100%;
+}
+
+.nav-left .logo-text{
+    position: absolute;
+    transform: rotate(270deg) translate(-113%,40%);
+    white-space: nowrap; /*يعني على خط واحد*/
+    transform-origin:0 ;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.nav-left .menu{
+    margin-top: 250px;
+
+}
+.nav-left .menu span{
+    height: 3px;
+    background: #fff;
+    display: block;
+}
+
+.nav-left .menu .top{
+    margin-bottom: 10px;
+    width: 100%;
+    transition: .8s;
+    
+}
+
+.nav-left .menu .bottom{
+    width: 75%;
+    transition: .8s;
+
+}
+
+.nav-left .name{
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.nav-left .icons ul{
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+.nav-left .icons li{
+    margin-bottom:16px ;
+}
+
+.nav-left .icons a{
+    color: #fff;
+}
+/*end nav-left*/
+
+
+
+/*start slider*/
+.slider img{
+   width: 100%; 
+}
+/*end slider*/
+
+.header .dark{
+    margin-top: 50px;
+}
+
+.header .dark i{
+    margin: 0 10px;
+}
+
+
+/*frame work*/
+ul{
+    list-style: none;
+}
