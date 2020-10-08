@@ -37,4 +37,30 @@ $(document).ready(function(){
             $('.nav-top').fadeOut(500);
         }
     })
+
+
+    //counterup
+
+    const counters = document.querySelectorAll('.about .num')
+    const delay = 200;
+
+    counters.forEach(counter => {
+        const updateCount= () => {
+            const target = counter.getAttribute('data-target')
+            const count = +counter.innerText;
+            const speed = target /delay;
+
+            if(count < target){
+                counter.innerText = Math.floor(count + speed);
+                setTimeout(updateCount,1);    
+            }
+            else{
+                counter.textContent = target
+            }
+            console.log(speed)
+            // console.log(target)
+        }
+
+        updateCount();
+    })
 })
