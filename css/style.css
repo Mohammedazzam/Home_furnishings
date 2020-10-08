@@ -1,3 +1,15 @@
+/*frame work*/
+ul{
+    list-style: none;
+}
+i{
+    cursor: pointer;
+    transition: .3s;
+}
+i:hover{
+    color: #595959;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
     background: #1f1f25;
@@ -236,14 +248,85 @@ body{
 /*end side-menu*/
 
 
-/*frame work*/
-ul{
-    list-style: none;
+/*start about*/
+.about{
+    margin-top: 130px;
 }
-i{
-    cursor: pointer;
-    transition: .3s;
+
+.about .heading{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
 }
-i:hover{
-    color: #595959;
+
+.about .title-letter{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 5.7em;
+    line-height: 1;
+    -webkit-text-stroke:1px rgba(225, 225, 255, .2) ;
+    color: transparent;
 }
+
+.about .title-word{
+    padding: 40px 0 86px 152px;
+    display: block;
+    line-height: 1.2;
+}
+
+.about p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+
+.about .counterup .box{
+    text-align: center;
+    margin-bottom: 70 px;
+}
+
+.about .counterup .box span{
+    display: block;
+}
+
+.about .counterup .num{
+    font-size: 86px;
+    font-weight: 800;
+}
+
+.about .counterup .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media(max-width:991px){
+    .about .counterup{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:650){
+    .about .heading{
+        font-size: 60px;
+    }
+    .about .title-word{
+        padding: 40px 0 86px 61px;
+    }
+    
+    .about p{
+        font-size: 16px;
+    }
+
+    .about .counterup .num{
+        font-size: 50px;
+    }
+
+    .about .counterup .name{
+        font-size: 16px;
+    }
+}
+/*end about*/

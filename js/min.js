@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
     //slider height
-    $('.owl-carousel .item').height($(window).height())
-    $(window).resize(function(){
-        $('.owl-carousel .item').height($(window).height())
-    })
+    // $('.owl-carousel .item').height($(window).height())
+    // $(window).resize(function(){
+    //     $('.owl-carousel .item').height($(window).height())
+    // })
 
     //owl carousal
     $('.owl-carousel').owlCarousel({
