@@ -604,6 +604,30 @@ body{
 }
 /*end testimonials*/
 
+/*start brands*/
+.brands{
+    margin-top: 100px;
+}
+
+.brands .item{
+    padding: 0 15px;
+}
+
+.brands .item img{
+    filter: invert(1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.brands .item img:hover{
+    filter: invert(0);
+}
+/*end brands*/
+
+
+
+
+
 
 
 

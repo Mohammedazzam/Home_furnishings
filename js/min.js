@@ -7,13 +7,20 @@ $(document).ready(function(){
     // })
 
     //owl carousal
-    $('.owl-carousel').owlCarousel({
+    $('.header .owl-carousel').owlCarousel({
         loop:true,
         items:1,
         autoplay:true,
         animateOut:'fadeOut',
         smartSpeed:450
     })
+
+        //owl carousal
+        $('.brands .owl-carousel').owlCarousel({
+            loop:true,
+            autoplay:true,
+            responsive:{0:{items:2}, 768:{items:4}, 992:{items:6}}
+        })
 
     //side-menu
     $('.menu').on('click',function(){
