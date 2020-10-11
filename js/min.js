@@ -63,4 +63,12 @@ $(document).ready(function(){
 
         updateCount();
     })
+
+    //count down
+    var content = $('.countdown').html()
+  $('.countdown').countdown('2021/01/01', function(event) {
+    $(this).html(event.strftime(content));
+  });
+
+
 })
