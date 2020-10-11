@@ -6,7 +6,6 @@ body{
     font-family: 'Raleway', sans-serif;
     background: #1f1f25;
     color: #fff;
-    height: 10000px;
 }
 
 /*start nav-top*/
@@ -32,6 +31,12 @@ body{
 
 .nav-top .dark i{
     margin: 0 10px;
+}
+
+@media(max-width:575px){
+    .nav-top .dark i{
+        margin: 0 5px;
+    }
 }
 /*end nav-top*/
 
@@ -358,6 +363,7 @@ body{
     font-weight: 500;
     font-size: 18px;
     transition: .3s;
+    margin-left: 15px;
 }
 
 .gallery .main-link::before{
@@ -539,6 +545,24 @@ body{
         font-weight: 800;
     }
 }
+
+@media(max-width:575px){
+
+    .offer .info .box{
+        padding:5px;
+    }
+
+    .offer .box .num{
+        font-size: 25px;
+        font-weight: 800;
+    }
+    
+    .offer .box .name{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
 /*end gallery*/
 
 
@@ -711,6 +735,12 @@ body{
     height: 140px;
 }
 
+.contact .contact-form{
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
 
 @media(max-width:1200px){
     .contact .get-in-touch h2{
@@ -721,6 +751,15 @@ body{
 @media(max-width:991px){
     .contact .get-in-touch h2{
         font-size: 45px;
+    }
+}
+
+@media(max-width:767px){
+    .contact .contact-form{
+        position: unset;
+    }
+    .contact .get-in-touch::before{
+        display: none;
     }
 }
 
@@ -735,6 +774,45 @@ body{
 
 /*end contact*/
 
+
+/*start footer*/
+footer{
+    background: #0f0f12;
+    padding: 100px 0;
+    margin-top: 70px;
+}
+
+footer .info h3{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+footer .info span{
+    display: block;
+    margin-bottom: 30px;
+    color: #999;
+    font-size: 20px;
+}
+
+footer .info a{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+footer .copyright{
+    color: #999;
+    font-size: 20px;
+    font-weight: 700px;
+    margin-top: 40px;
+}
+
+@media(max-width:767px){
+    footer{
+        text-align: center;
+    }
+}
+/*end footer*/
 
 
 
