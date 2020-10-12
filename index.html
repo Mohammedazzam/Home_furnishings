@@ -4,66 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--fontawesome-->
+    <title>Website_07</title>
+    <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <!--google-fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <!--font family-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!--vendor css-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
 
-    <link rel="stylesheet" href="assist/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="assist/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!--main.css-->
+    <link rel="stylesheet" href="css/style.css" data-dark="switch">
 </head>
 
 <body>
-
     <!--Start nav-top-->
-    <nav class="nav-top flex-top">
+    <nav class="nav-top fixed-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
-                    <div class="logo">
-                        <img src="images/logo.png">
-                    </div>
+                    <div class="logo"><img src="images/logo.png" /></div>
                 </div>
-                <div class="col-4 d-flex justify-content-center align-content-center">
-                    <div class="menu">
+                <div class="col-4 row align-items-center justify-content-center">
+                    <div class="toggle">
                         <span class="top"></span>
                         <span class="bottom"></span>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="dark">
+                    <div class="icons">
                         <i class="fas fa-search"></i>
-                        <i class="fas fa-adjust"></i>
+                        <i class="far fa-moon"></i>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+    <!--End nav-top-->
 
-    <!--start header-->
-    <section class="header">
+    <!--Start header-->
+    <div class="header">
         <div class="container-fluid">
             <div class="row">
-                <!--nav-left-->
-                <div class="col-lg-1">
+                <div class="col-md-1">
+                    <!--start navbar-left-->
                     <div class="nav-left">
-                        <div class="brand">
-                            <div class="logo">
-                                <img src="images/logo.png" alt="">
-                            </div>
-                            <div class="logo-text">INTERIOR DESIGN</div>
-                        </div>
-                        <div class="menu">
+                        <a class="brand" href="#">
+                            <div class="logo"><img src="images/logo.png" /></div>
+                            <div class="brand-text">Interior Design</div>
+                        </a>
+
+                        <div class="toggle">
                             <span class="top"></span>
                             <span class="bottom"></span>
-                            <div class="name">menu</div>
+                            <div class="toggle-text">Menu</div>
                         </div>
-                        <div class="icons">
+                        <div class="sochial mt-5">
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -71,90 +73,91 @@
                             </ul>
                         </div>
                     </div>
+                    <!--End navbar-left-->
                 </div>
-                <!--slider-->
-                <div class="col-lg-10">
-                    <div class="slider">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item"><img src="images/slider/slider-2.jpg"></div>
-                            <div class="item"><img src="images/slider/slider-3.jpg"></div>
-                            <div class="item"><img src="images/slider/slider-4.jpg"></div>
+                <div class="col-md-10">
+                    <!--Start slider-->
+                    <section class="slider">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item bg-2"></div>
+                            <div class="item bg-3"></div>
+                            <div class="item bg-4"></div>
                         </div>
-                    </div>
+                    </section>
+                    <!--End slider-->
                 </div>
-                <!--icons-->
-                <div class="col-lg-1">
-                    <div class="dark">
+                <div class="col-md-1">
+                    <div class="icons">
                         <i class="fas fa-search"></i>
-                        <i class="fas fa-adjust"></i>
+                        <i class="far fa-moon"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--end header-->
+    </div>
+    <!--End header-->
 
-    <!--side menu-->
+    <!--Start side menu-->
     <div class="side-menu">
-        <div class="container">
-            <div class="icon">
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="list">
-                <ul>
-                    <li><a href="#" data-num="01">About</a></li>
-                    <li><a href="#" data-num="02">Gallery</a></li>
-                    <li><a href="#" data-num="03">Contact</a></li>
-                </ul>
-            </div>
+        <div class="times"><i class="fas fa-times"></i></div>
+        <div class="list">
+            <ul>
+                <li><a class="active" href="#" data-num="01">about</a></li>
+                <li><a href="#" data-num="02">gallery</a></li>
+                <li><a href="#" data-num="03">contact</a></li>
+            </ul>
         </div>
     </div>
 
 
-    <!--start About-->
+    <!--End side menu-->
+
+
+    <!--Start about-->
     <section class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="heading">
-                        <span class="title-letter">a</span>
-                        <span class="title-word">
-                            <span class="font-wight-light">about</span>
-                            <span>studio</span>
-                        </span>
+                    <div class="info wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
+                        <h2 class="heading">
+                            <span class="tittle-letter">A</span>
+                            <span class="tittle-word">
+                                <span class="font-weight-light">about</span>
+                                <span>studio</span>
+                            </span>
+                        </h2>
+                        <p>Founded in 1999, ID works to deliver full interior design packages from concept schemes to
+                            full scale of interior & architectural refurbishments with the needed technical drawings &
+                            3D visualizations , with close attention to details,
+                            managed and implemented with great care; for interior construction, space planning,
+                            materials, finishes, furnishings, fixtures and equipment.</p>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laboriosam! Voluptatibus ab
-                        veritatis cum commodi eos officia quaerat, eaque exercitationem recusandae impedit sed, placeat
-                        repellendus culpa soluta! Esse, dolor possimus.
-                    </p>
                 </div>
-
                 <div class="col-lg-6">
-                    <div class="counterup">
+                    <div class="count">
                         <div class="row">
-                            <div class="col-6">
-                                <div class="box">
-                                    <span class="num" data-target="1000">0</span>
+                            <div class="col-sm-6">
+                                <div class="box wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="10">
+                                    <span class="num" data-target="560">0</span>
                                     <span class="name">PROJECTS</span>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="box">
-                                    <span class="num" data-target="2000">0</span>
-                                    <span class="name">PROJECTS</span>
+                            <div class="col-sm-6">
+                                <div class="box wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="10">
+                                    <span class="num" data-target="380">0</span>
+                                    <span class="name">EMPLOYEES</span>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="box">
-                                    <span class="num" data-target="3000">0</span>
-                                    <span class="name">PROJECTS</span>
+                            <div class="col-sm-6">
+                                <div class="box wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
+                                    <span class="num" data-target="250">0</span>
+                                    <span class="name">CONTRACTORS</span>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="box">
-                                    <span class="num" data-target="4000">0</span>
-                                    <span class="name">PROJECTS</span>
+                            <div class="col-sm-6">
+                                <div class="box wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
+                                    <span class="num" data-target="500">0</span>
+                                    <span class="name">CLIENTS</span>
                                 </div>
                             </div>
                         </div>
@@ -163,29 +166,26 @@
             </div>
         </div>
     </section>
-    <!--end About-->
+    <!--End about-->
 
-
-    <!--start gallery-->
-    <section class="gallery mt-5">
+    <!--Start gallary-->
+    <section class="gallary">
         <div class="container">
             <div class="head">
                 <h2>gallery</h2>
             </div>
-
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <div class="image">
-                        <img src="images/gallary/01.jpg" class="img-fluid">
+                    <div class="image wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
+                        <img src="images/gallary/01.jpg" />
                         <div class="overlay">
                             <div>
                                 <i class="fas fa-search"></i>
                             </div>
                         </div>
                     </div>
-
-                    <div class="image">
-                        <img src="images/gallary/02.jpg" class="img-fluid">
+                    <div class="image wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
+                        <img src="images/gallary/03.jpg" />
                         <div class="overlay">
                             <div>
                                 <i class="fas fa-search"></i>
@@ -193,201 +193,192 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
-                    <div class="image margin-neg">
-                        <img src="images/gallary/03.jpg" class="img-fluid">
+                    <div class="image margin-neg wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="10">
+                        <img src="images/gallary/02.jpg" />
                         <div class="overlay">
                             <div>
                                 <i class="fas fa-search"></i>
                             </div>
                         </div>
                     </div>
-
-                    <div class="image">
-                        <img src="images/gallary/04.jpg" class="img-fluid">
+                    <div class="image wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="10">
+                        <img src="images/gallary/04.jpg" />
                         <div class="overlay">
                             <div>
                                 <i class="fas fa-search"></i>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="main-link">view more</a>
+                    <a href="#" class="main-link">View more</a>
                 </div>
-
             </div>
         </div>
     </section>
-    <!--end gallery-->
+    <!--End gallary-->
 
-
-    <!--start offer-->
+    <!--Start offer-->
     <section class="offer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="info">
-                        <div class="heading">
-                            <span class="title-letter">s</span>
-                            <span class="title-word">
-                                <span class="font-wight-light">spacial</span>
-                                <span>offer</span>
+                        <h2 class="heading wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
+                            <span class="tittle-letter">S</span>
+                            <span class="tittle-word">
+                                <span class="font-weight-light">SPECIAL</span>
+                                <br>
+                                <span>OFFER</span>
                             </span>
+                        </h2>
+                        <p class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="10">Apply before the
+                            end of the promotion and get a 35% discount. Order Your future interior right now.
+                        </p>
+                        <!--counterdown-->
+                        <div class="countdown row wow animate__fadeInLeft" data-count="2020/12/30"
+                            data-wow-duration="1s" data-wow-offset="10">
+                            <div>
+                                <h3>%D</h3>
+                                <h4>Days</h4>
+                            </div>
+                            <div>
+                                <h3>%H</h3>
+                                <h4>Hours</h4>
+                            </div>
+                            <div>
+                                <h3>%M</h3>
+                                <h4>Minutes</h4>
+                            </div>
+                            <div>
+                                <h3>%S</h3>
+                                <h4>Seconds</h4>
+                            </div>
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. </p>
-                        <div class="countdown">
-                            <div class="box">
-                                <span class="num">%D</span>
-                                <span class="name">days</span>
-                            </div>
-                            <div class="box">
-                                <span class="num">%H</span>
-                                <span class="name">hours</span>
-                            </div>
-                            <div class="box">
-                                <span class="num">%M</span>
-                                <span class="name">minutes</span>
-                            </div>
-                            <div class="box">
-                                <span class="num">%S</span>
-                                <span class="name">seconds</span>
-                            </div>
-
-                        </div>
-                        <a href="#" class="btn main-btn">get discount</a>
+                        <a href="#" class="main-btn btn wow animate__fadeInUp" data-wow-duration="1s"
+                            data-wow-offset="10">get discount <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="image">
-                        <img src="images/offer.png" class="img-fluid">
+                <div class="col-md-6">
+                    <div class="image wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="10">
+                        <img src="images/offer.png" />
                         <div class="discount">
                             <div class="discount-text">
-                                <span>35%</span>
-                                OFF
+                                <span>35%</span> OFF
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!--end offer-->
+    <!--End offer-->
 
-
-    <!--start testimonials-->
+    <!--Start testimonials-->
     <section class="testimonials">
         <div class="container">
-            <div class="heading">
-                <span class="title-letter">w</span>
-                <span class="title-word">
-                    <span class="font-wight-light">what</span>
+            <h2 class="heading wow animate__fadeInDown" data-wow-duration="1s" data-wow-offset="10">
+                <span class="tittle-letter">W</span>
+                <span class="tittle-word">
+                    <span class="font-weight-light">what</span>
+                    <br>
                     <span>people say</span>
                 </span>
-            </div>
+            </h2>
         </div>
         <div class="container custom-container">
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-lg-4 col-md-6">
-                    <div class="box bg-1">
+                    <div class="post bg-1 wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="10">
                         <div class="info">
                             <span class="num">01</span>
                             <h3>Abigail Brown</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad perferendis vitae
-                                commodi
-                                modi. Cupiditate laborum maiores aspernatur nostrum commodi doloribus, sed dignissimos
-                                illum
-                                laboriosam molestiae earum? Odio, amet expedita!</p>
-
+                            <p>We were pleased not only with the price but also with the quality of the work done.
+                                Thanks to the studio and its designers! It turned out great, we hope for further
+                                cooperation.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="box bg-2">
+                    <div class="post bg-2 wow animate__fadeInDown" data-wow-duration="1s" data-wow-offset="10">
                         <div class="info">
-                            <span class="num">01</span>
-                            <h3>Abigail Brown</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad perferendis vitae
-                                commodi
-                                modi. Cupiditate laborum maiores aspernatur nostrum commodi doloribus, sed dignissimos
-                                illum
-                                laboriosam molestiae earum? Odio, amet expedita!</p>
-
+                            <span class="num">02</span>
+                            <h3>Adam Smith</h3>
+                            <p>We selected ID Studio because of their specialists’ rigorous design background and
+                                education. They did the best job!
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="box bg-3">
+                    <div class="post bg-3 wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="10">
                         <div class="info">
-                            <span class="num">01</span>
-                            <h3>Abigail Brown</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad perferendis vitae
-                                commodi
-                                modi. Cupiditate laborum maiores aspernatur nostrum commodi doloribus, sed dignissimos
-                                illum
-                                laboriosam molestiae earum? Odio, amet expedita!</p>
-
+                            <span class="num">03</span>
+                            <h3>David Richards</h3>
+                            <p>I love these guys! Moved from another state and did not know where to buy custom
+                                furniture or order an interior. I was recommended to hire ID, and I hadn’t any regret
+                                ever since. Everything I ordered was well done!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--end testimonials-->
+    <!--End testimonials-->
 
-    <!--start brand-->
+    <!--Start brands-->
     <section class="brands">
-        <div class="container">
-            <div class="owl-carousel">
-                <div class="item"><img src="images/brands/01.png"></div>
-                <div class="item"><img src="images/brands/02.png"></div>
-                <div class="item"><img src="images/brands/03.png"></div>
-                <div class="item"><img src="images/brands/04.png"></div>
-                <div class="item"><img src="images/brands/05.png"></div>
-                <div class="item"><img src="images/brands/06.png"></div>
-            </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="images/brands/01.png" /></div>
+            <div class="item"><img src="images/brands/02.png" /></div>
+            <div class="item"><img src="images/brands/03.png" /></div>
+            <div class="item"><img src="images/brands/04.png" /></div>
+            <div class="item"><img src="images/brands/05.png" /></div>
+            <div class="item"><img src="images/brands/06.png" /></div>
         </div>
     </section>
-    <!--end brand-->
+    <!--End brands-->
 
-
-    <!--start contact-->
+    <!--Start contact-->
     <section class="contact">
         <div class="container custom-container">
             <div class="row">
                 <div class="col-md-5">
                     <div class="join">
-                        <h3>join our <br> weekly NewsLater</h3>
+                        <h3>Join Our<br> Weekly Newsletter
+                        </h3>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="email address">
+                            <input type="email" class="form-control" placeholder="Email Adress" />
                         </div>
                         <div class="form-group">
-                            <a href="#" class="btn">Subscribe <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn">subscribe <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 contact-form">
+                <div class="col-md-7 contact-form-wrap">
                     <div class="get-in-touch">
-                        <h2>Get In Touch</h2>
+                        <div class="head">
+                            <h2>get in touch</h2>
+                        </div>
                         <form>
                             <div class="row">
                                 <div class="form-group col-lg-6">
-                                    <label>name</label>
-                                    <input type="text" class="form-control" placeholder="your name">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" placeholder="type your name here" />
                                 </div>
                                 <div class="form-group col-lg-6">
-                                    <label>email</label>
-                                    <input type="email" class="form-control" placeholder="your email">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="type your email here" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>message</label>
-                                <textarea class="form-control" placeholder="message"></textarea>
+                                <label>Message</label>
+                                <textarea placeholder="your message" class="form-control"></textarea>
                             </div>
                             <div class="form-group">
-                                <a href="#" class="btn main-btn">send <i class="fas fa-arrow-right"></i></a>
+                                <button type="submit" class="main-btn btn">send <i
+                                        class="fas fa-arrow-right"></i></button>
                             </div>
                         </form>
                     </div>
@@ -395,22 +386,21 @@
             </div>
         </div>
     </section>
-    <!--end contact-->
+    <!--End contact-->
 
-
-    <!--start footer-->
+    <!--Start footer-->
     <footer>
-        <div class="container">
+        <div class="container custom-container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="info">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h3>Our Contacts</h3>
-                                <span>moh@gmail.com</span>
-                                <span>1 800 300 500</span>
-                                <span>4730 usa, CA Spring Dr, <br>
-                                      Lose Angeste CA 9999  
+                                <span>info@demolink.org</span>
+                                <span>1 800 1234 567</span>
+                                <span>4730 Crystal Springs Dr,<br>
+                                    Los Angeles, CA 90027
                                 </span>
                             </div>
                             <div class="col-lg-6">
@@ -422,19 +412,100 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="copyright ">2020 copyright</p>
+
                     </div>
                 </div>
             </div>
+            <p class="copy-right">© 2020 ID. All rights reserved. Privacy Policy</p>
         </div>
     </footer>
-    <!--end footer-->
+    <!--End footer-->
 
-    <script src="assist/jquery/jquery-3.5.1.js"></script>
-    <script src="assist/bootstrap/bootstrap.min.js"></script>
-    <script src="assist/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assist/count-down/jquery.countdown.min.js"></script>
-    <script src="js/min.js"></script>
+    <!--button up-->
+    <div class="up">
+        Back To Top
+        <i class="fas fa-arrow-right"></i>
+    </div>
+
+    <!--loading page-->
+    <div class="loading">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <h3>loading</h3>
+    </div>
+
+
+
+
+
+
+    <!--vendor js-->
+    <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/counter/jquery.countdown.min.js"></script>
+    <script src="vendor/wow/wow.min.js"></script>
+
+    <!--main.js-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
